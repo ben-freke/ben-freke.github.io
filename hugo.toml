@@ -1,0 +1,114 @@
+baseURL = ""
+title   = "Ben Freke"
+languageCode = "en-gb"
+theme = "hello-friend-ng"
+
+PygmentsCodeFences = true
+PygmentsStyle = "monokai"
+
+paginate  = 10
+rssLimit  = 10  # Maximum number of items in the RSS feed.
+copyright = "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License." # This message is only used by the RSS template.
+
+# googleAnalytics = ""
+# disqusShortname = ""
+
+archetypeDir = "archetypes"
+contentDir   = "content"
+dataDir      = "data"
+layoutDir    = "layouts"
+publishDir   = "public"
+
+buildDrafts  = false
+buildFuture  = false
+buildExpired = false
+canonifyURLs = true
+
+enableRobotsTXT = true
+enableGitInfo   = false
+enableEmoji     = true
+enableMissingTranslationPlaceholders = false
+disableRSS     = true
+disableSitemap = false
+disable404     = false
+disableHugoGeneratorInject = false
+
+[permalinks]
+posts = "/posts/:year/:month/:title/"
+
+[author]
+name = "Ben Freke"
+
+[blackfriday]
+hrefTargetBlank = true
+
+[taxonomies]
+tag      = "tags"
+category = "categories"
+series   = "series"
+
+[params]
+dateform        = "Jan 2, 2006"
+dateformShort   = "Jan 2"
+dateformNum     = "2006-01-02"
+dateformNumTime = "2006-01-02 15:04"
+
+# Metadata mostly used in document's head
+#
+description = "Ben Freke"
+keywords = ""
+images = [""]
+
+# Home subtitle of the index page.
+#
+homeSubtitle = "Green tech enthusiast, engineer."
+
+disableReadOtherPosts = false
+
+enableThemeToggle = true
+
+enableSharingButtons = true
+
+enableGlobalLanguageMenu = false
+
+justifyContent = false  # Set "text-align: justify" to .post-content.
+
+[params.favicon.color]
+mask = "#1b1c1d"
+msapplication = "#1b1c1d"
+theme = "#1b1c1d"
+
+
+[params.logo]
+logoMark     = ">"
+logoText     = "$ cd ~"
+logoHomeLink = "/"
+
+[params.portrait]
+path     = "/img/avatar.jpg"
+alt      = "Portrait"
+maxWidth = "200px"
+
+# Social icons
+
+[[params.social]]
+name = "github"
+url  = "https://github.com/ben-freke"
+
+[[params.social]]
+name = "linkedin"
+url  = "https://www.linkedin.com/in/benfreke"
+
+[[params.social]]
+name = "email"
+url  = "mailto:benjaminfreke@gmail.com"
+
+[menu]
+[[menu.main]]
+identifier = "cv"
+name       = "CV"
+url        = "cv/"
+[[menu.main]]
+identifier = "posts"
+name       = "Posts"
+url        = "posts/"
