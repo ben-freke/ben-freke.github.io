@@ -1,0 +1,53 @@
+<!-- Slider main container -->
+<div class="swiper">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+        <!-- Slides -->
+        {{ .Inner }}
+    </div>
+</div>
+
+<style>
+    .swiper {
+        height: 60px;
+    }
+    .swiper-slide {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        width: 10%;
+        opacity: 0.5; /* Fade non-active slides */
+        transition: transform 0.3s, opacity 0.3s; /* Smooth transition for scaling and fading */
+    }
+
+    .swiper-slide-active {
+        transform: scale(1.1); /* Enlarge the active slide */
+        opacity: 1; /* Ensure the active slide is fully opaque */
+    }
+
+    .swiper-slide img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+</style>
+
+<script>
+    var swiper = new Swiper(".swiper", {
+        spaceBetween: 15, // Adjust space between slides
+        centeredSlides: true, // Center the active slide
+        autoplay: {
+            delay: 2500, // Delay between transitions (in ms)
+            disableOnInteraction: false, // Keep autoplaying when interacting
+        },
+        loop: true, // Enable looping
+        slidesPerView: 'auto', // Adjust the number of slides per view dynamically
+        fadeEffect: {
+            crossFade: true // Enable crossfade for smoother transitions
+        },
+        speed: 1000, // Transition speed (in ms)
+        noSwiping: true, // Disable swiping
+        allowTouchMove: false, // Disable touch move
+    });
+</script>

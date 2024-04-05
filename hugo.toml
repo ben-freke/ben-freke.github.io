@@ -10,8 +10,7 @@ paginate  = 10
 rssLimit  = 10  # Maximum number of items in the RSS feed.
 copyright = "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License." # This message is only used by the RSS template.
 
-# googleAnalytics = ""
-# disqusShortname = ""
+googleAnalytics = "G-ZW5M3F9G0Q"
 
 archetypeDir = "archetypes"
 contentDir   = "content"
@@ -48,10 +47,10 @@ category = "categories"
 series   = "series"
 
 [params]
-dateform        = "Jan 2, 2006"
-dateformShort   = "Jan 2"
-dateformNum     = "2006-01-02"
-dateformNumTime = "2006-01-02 15:04"
+dateform        = "2 Jan 2006"
+dateformShort   = "2 Jan"
+dateformNum     = "02-01-2006"
+dateformNumTime = "02-01-2006 15:04"
 
 # Metadata mostly used in document's head
 #
@@ -104,10 +103,6 @@ name = "email"
 url  = "mailto:indices-crop0p@icloud.com"
 
 [menu]
-[[menu.main]]
-identifier = "cv"
-name       = "CV"
-url        = "cv/"
 [[menu.main]]
 identifier = "posts"
 name       = "Posts"
